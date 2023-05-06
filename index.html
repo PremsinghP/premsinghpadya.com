@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Premsingh Padya's - Portfolio</title>
@@ -11,6 +11,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+	font-size: 16px;
       }
       html {
         background-color: #00a9d8
@@ -28,36 +29,33 @@
         page-break-inside: avoid;
       }
       .header {
-        height: 28vh;
-        width: 80vh;
+        height: auto;
+        width: 100%;
         background-color: darkred;
         margin: 0 auto;
-        position: fixed;
       }
       .body {
-        min-height: 69vh;
-        max-width: 80vh;
+        height: auto;
+        width: 100%;
         font-family: serif;
         text-align: center;
       }
       .footer {
-        height: 5vh;
-        width: 80vh;
+        height: auto;
+        width: 100%;
         background-color: darkred;
         bottom: 0px;
         color: white;
         font-family: cursive;
         text-align: center;
         margin-bottom: 0px;
-        position: fixed;
       }
       .fa {
-        padding: 5px;
-        font-size: 7px;
-        width: 20px;
+        padding: 1%;
+        font-size: 3vw;
         text-align: center;
         text-decoration: none;
-        margin: 5px 2px;
+        margin: 1% 0.5%;
       }
       .fa:hover {
         opacity: 0.7;
@@ -89,11 +87,15 @@
       .headerimg {
         object-fit: cover;
         border-radius: 50%;
+	      width: 15vw;
+	      height: 15vw;
       }
       .name {
         font-family: Georgia, serif;
-        font-size: 16px;
+        font-size: 2.5vw;
         color: white;
+	width: auto;
+	margin-bottom: 2%;
       }
       .home,
       .about,
@@ -101,8 +103,9 @@
       .skills,
       .social,
       .exit {
-        margin-bottom: 10px;
+        margin-bottom: 2%;
         cursor: pointer;
+	      font-size: 2.5vw;
         box-shadow: 0 3px #999;
       }
       .home:active,
@@ -127,7 +130,9 @@
       line-height: 2;
       color: deeppink;
       animation: high 1s ease-in-out infinite alternate;
-      margin-left: 200px;
+      margin-left: 10%;
+	    font-size: 6vw;
+	    
 
     }
 
@@ -140,6 +145,9 @@
 
 table, th, td {
   text-align: center;
+	font-size: 2.5vw;
+	padding: 1%;
+	margin: 1% 0;
 }
 
 th{
@@ -149,7 +157,31 @@ th{
 tr:nth-child(even) {
   background-color: #D6EEEE;
 }
-
+@media only screen and (max-width: 768px){
+	.name{
+		font-size:4vw;
+	}
+	.headerimg{
+		width: 30vw;
+		height: 30vw;
+	}
+	.home, .about, .edu, .skills,, .social, .exit{
+	font-size: 4vw;	
+	}
+	.high-header
+	{
+		font-size: 8vw;
+		margin-left: 0;
+	}
+	table, th, td
+	{
+		font-size: 4vw;
+	}
+	
+	    }
+	    
+	    
+	    
  </style>
 <div class="header"> 
 <div align="right">
@@ -163,7 +195,9 @@ tr:nth-child(even) {
 	<img class="headerimg" src="./images/premsingh.png" width="140px" height="140px" align="right" position= "fixed" alt="Premsingh Padya">
 <br><br><br>
 <center><br><b3 class="name">Premsingh Padya's Portfolio</b3></center>
-<br>
+<br>  .skills, .social, .exit{
+	
+	}
 <button class="home w3-white w3-border w3-border-blue w3-round-large" onclick="window.location.href='./index.html';" target="_self">Home</button>
 <button class="about w3-white w3-border w3-border-green w3-round-large" onclick="window.location.href='./about.html';"  target="_self">About</button>
 <button class="edu w3-white w3-border w3-border-red w3-round-large" onclick="window.location.href='./education.html';"  target="_self">Edu-Q</button>
