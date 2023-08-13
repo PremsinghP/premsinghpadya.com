@@ -228,7 +228,17 @@ iframe {
 
 <iframe src="https://www.linkedin.com/in/premsinghpadya/" frameborder="0"></iframe>
   </center>
-  </div>
+  </div><script>
+        let count = 0;
+        const countElement = document.getElementById('count');
+        
+        function updateCounter() {
+            count++;
+            countElement.innerText = count;
+        }
+        
+        updateCounter();
+    </script>
 </body>
 <footer>
  <div class="footer">All rights reserved..! @Premsingh Padya</div><div class="counter">
